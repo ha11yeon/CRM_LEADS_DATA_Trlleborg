@@ -52,7 +52,7 @@ if uploaded_file:
             st.subheader("🔹 상태별 Boxplot 보기")
             fig2b, ax2b = plt.subplots()
             sns.boxplot(data=df, x='Status_Text', y=selected_num, ax=ax2b)
-            ax2b.set_title(f"{selected_num} 보기 범위")
+            ax2b.set_title(f"{selected_num} - Scale")
             plt.xticks(rotation=45)
             st.pyplot(fig2b)
 

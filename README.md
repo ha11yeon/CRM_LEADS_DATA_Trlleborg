@@ -74,4 +74,4 @@ CRM_LEADS/
 pip install -r requirements.txt
 
 # Step 2: Run Streamlit app
-streamlit run crm_dashboard_app.py
+streamlit run CRM/crm.py

@@ -7,6 +7,7 @@ A full-stack data exploration and interactive visualization project analyzing CR
 ---
 
 ## 📁 Project Overview
+https://ha11yeon-crm-leads-data-trlleborg.streamlit.app/
 
 This project aims to visualize and explore lead-related CRM data, helping business stakeholders better understand:
 

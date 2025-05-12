@@ -26,7 +26,7 @@ if uploaded_file:
         st.subheader("📈 타겟 상태(Status_Text) 분포")
         fig1, ax1 = plt.subplots()
         sns.countplot(data=df, x='Status_Text', order=df['Status_Text'].value_counts().index, ax=ax1)
-        ax1.set_title("Status_Text 분포")
+        ax1.set_title("Status_Text Distribution")
         plt.xticks(rotation=45)
         st.pyplot(fig1)
 
@@ -44,7 +44,7 @@ if uploaded_file:
             selected_num = st.selectbox("비교할 수치형 열 선택", numeric_cols)
             fig2, ax2 = plt.subplots()
             sns.barplot(data=df, x='Status_Text', y=selected_num, estimator='mean', ax=ax2)
-            ax2.set_title(f"Status_Text 별 평균 {selected_num}")
+            ax2.set_title(f"Status_Text - Average {selected_num}")
             plt.xticks(rotation=45)
             st.pyplot(fig2)
 
@@ -64,7 +64,7 @@ if uploaded_file:
             selected_cat = st.selectbox("비교할 범주형 열 선택", categorical_cols)
             fig3, ax3 = plt.subplots()
             sns.countplot(data=df, x=selected_cat, hue='Status_Text', order=df[selected_cat].value_counts().index[:10], ax=ax3)
-            ax3.set_title(f"{selected_cat} 별 Status_Text 분포")
+            ax3.set_title(f"{selected_cat} - Status_Text Distribution")
             plt.xticks(rotation=45)
             st.pyplot(fig3)
 

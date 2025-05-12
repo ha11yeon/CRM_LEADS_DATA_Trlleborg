@@ -18,22 +18,30 @@ This project aims to visualize and explore lead-related CRM data, helping busine
 ---
 ## 📂 Directory Structure
 
+```
 CRM_LEADS/
 ├── code/
-│ ├── 01leads_data.ipynb
-│ ├── 02Feature_importance.ipynb
-│ ├── 03~06Data_Flow.ipynb
-│ └── crm_full_dashboard.ipynb
+│   ├── 01leads_data.ipynb
+│   ├── 02Feature_importance.ipynb
+│   ├── 03~06Data_Flow.ipynb
+│   └── crm_full_dashboard.ipynb
 │
 ├── CRM/
-│ └── crm.py # ✅ Streamlit 메인 앱
-│ └── df_sample.csv # ✅ Streamlit 첨부데이터
+│   └── crm.py                  # ✅ Streamlit 메인 앱
+│   └── df_sample.csv           # ✅ Streamlit 첨부데이터
 │
 ├── data/
-│ ├── lead_columns_list.csv
-│ ├── lead_notes.csv # ⚠️ 약 57MB
-│ ├── leads_df_cleaned.csv # ⚠️ 약 65MB
-│ └── notes_only.csv
+│   ├── lead_columns_list.csv
+│   ├── lead_notes.csv          # ⚠️ 약 57MB
+│   ├── leads_df_cleaned.csv    # ⚠️ 약 65MB
+│   └── notes_only.csv
+```
+
+> 📝 핵심 파일:
+> - `crm.py`: Streamlit 대시보드 실행 파일
+> - `df_sample.csv`: 테스트용 CSV 파일
+> - `code/`: Jupyter 기반 분석 기록
+> - `data/`: 실제 CRM 리드 및 메모 데이터
 
 ---
 
